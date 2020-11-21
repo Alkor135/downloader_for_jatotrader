@@ -71,7 +71,7 @@ class DownloadFinam:
             ('at', 1)  # Нужны ли заголовки столбцов
         ])
 
-        self.url = f'{FINAM_URL}{ticker}_{download_date}.csv?{params}'  # урл составлен!
+        self.url = f'{FINAM_URL}{ticker}_{download_date}_{download_date}.txt?{params}'  # урл составлен!
         print(f'Ссылка для запроса готова: {self.url}')
 
     def path_file(self, file_name_date):
@@ -113,8 +113,8 @@ if __name__ == "__main__":
     path_data = 'c:/Jatotrader/QSCALP'  # Папка для сохранения файлов котировок
     ticker = "SPFB.Si-12.20"  # задаём тикер
     period = 1  # задаём период. Выбор из: 'tick': 1
-    start = "01.09.2020"  # с какой даты начинать тянуть котировки
-    end = "18.11.2020"  # финальная дата, по которую тянуть котировки
+    start = "17.09.2020"  # с какой даты начинать тянуть котировки
+    end = "20.11.2020"  # финальная дата, по которую тянуть котировки
 
     # Далее идет исполняемый код (не настройки)
     # Делаем преобразования дат:
